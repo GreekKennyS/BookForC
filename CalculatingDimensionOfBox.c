@@ -1,6 +1,7 @@
 /*****************************************************************************
  *  Name: Calculator Of A Box                                                *
  *  Purpose: Calculation of Dimensions and weight                            *
+ *  with input from user xyz                                                 *
  *  Date:31/10/2023                                                          *
  *  Author: Me, Georgie                                                      *
  *****************************************************************************/
@@ -28,7 +29,9 @@ int main()
     weight = volume/166;
     weight = ceil(weight);
 
-    printf("The weight of the box is:%lf \n",weight);
+    printf("The Dimensions are: %dx%dx%d \n",length,width,height);
+    printf("The volume is: %.2lf \n",volume);
+    printf("The weight of the box is:%.2lf \n",weight);
 
     return 0;
 }
