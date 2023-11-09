@@ -30,8 +30,8 @@ int main()
     weight = ceil(weight);
 
     printf("The Dimensions are: %dx%dx%d \n",length,width,height);
-    printf("The volume is: %.2lf \n",volume);
-    printf("The weight of the box is:%.2lf \n",weight);
+    printf("The volume is: %.2lf (cubic inches)\n",volume);
+    printf("The weight of the box is: %.2lf (pounds)\n",weight);
 
     return 0;
 }
