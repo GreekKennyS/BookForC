@@ -18,7 +18,7 @@ int main(){
     double H = sin(90);         //hmitono
     double I = cos(45);         //sinhmitono
     double J = tan(90);         //efaptomenh
-    double G = log(1000);       //log :)
+    double G = log(1000);       //log :) 
 
     printf("%.1lf\t",F);        
 
