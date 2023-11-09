@@ -7,7 +7,7 @@
  *****************************************************************************/
 #include <stdio.h>
 #include <math.h>
-
+#define INCHES_PERPOUND 166
 int main()
 {
     int height,length,width;
@@ -26,7 +26,7 @@ int main()
     getchar();
 
     volume = height * length * width;
-    weight = volume/166;
+    weight = volume/INCHES_PERPOUND;
     weight = ceil(weight);
 
     printf("The Dimensions are: %dx%dx%d \n",length,width,height);
