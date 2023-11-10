@@ -9,7 +9,7 @@ int main()
     scanf("%lf",&F);
 
     C = (F-FREEZING_POINT)+ SCALE_FACTOR;
-    printf("The converted temperature from Fahrenheit to Celcius is: %lf \n",C);
+    printf("The converted temperature from Fahrenheit to Celcius is: %.1lf \n",C);
     
     return 0;
 }
