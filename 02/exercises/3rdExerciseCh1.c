@@ -10,7 +10,9 @@
 #define INCHES_PERPOUND 166
 int main()
 {
-    int height,length,width;
+    int height = 10;
+    int length = 8;
+    int width = 10;
     double volume,weight;
 
     printf("Enter height: \n");
@@ -26,12 +28,10 @@ int main()
     getchar();
 
     volume = height * length * width;
-    weight = volume/INCHES_PERPOUND;
-    weight = ceil(weight);
 
     printf("The Dimensions are: %dx%dx%d \n",length,width,height);
     printf("The volume is: %.2lf (cubic inches)\n",volume);
-    printf("The weight of the box is: %.2lf (pounds)\n",weight);
+    printf("The weight of the box is: %.2lf (pounds)\n",(volume + 165)/INCHES_PERPOUND);
 
     return 0;
 }
