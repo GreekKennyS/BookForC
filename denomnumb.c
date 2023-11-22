@@ -2,18 +2,18 @@
 
 int main()
 {
-    int num1,denum1,num2,denum2,result_num,result_denum;
+    int num1,denom1,num2,denom2,result_num,result_denom;
 
     printf("Enter num1 and denum1: \n");
-    scanf("%d/%d",&num1,&denum1);
+    scanf("%d /%d",&num1,&denom1);
 
     printf("Enter num2 and denum2: \n");
-    scanf("%d/%d",&num2,&denum2);
+    scanf("%d /%d",&num2,&denom2);
 
-    result_num = num1 * denum1 + num2 * denum2;
-    result_denum = denum1 * denum2;
+    result_num = num1 * denom1 + num2 * denom2;
+    result_denom = denom1 * denom2;
 
-    printf("Result: %d/%d",result_num,result_denum);
+    printf("Result: %d/%d",result_num,result_denom);
     
     return 0;
 }
