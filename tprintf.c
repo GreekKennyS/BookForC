@@ -4,7 +4,7 @@ int main()
 {
     int i,y,y2;
     float x;
-
+    char string[10];
     i = 40;
     x = 839.21f;
 
@@ -13,6 +13,8 @@ int main()
 
     printf("Enter two numbers: \n");
     scanf("%i",&y);
+    scanf("%s",string);
+    printf("%s hm \n",string);
     printf("1:%d",y);
 
     return 0;
