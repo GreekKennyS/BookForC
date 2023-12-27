@@ -22,7 +22,7 @@ int main(){
 
     printf("%.1lf\t",F);        
 
-    printf("%d\t",E);                                 
+    printf("%d\t λολ",E);                                 
                                
 return 0;
 }

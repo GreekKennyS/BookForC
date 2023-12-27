@@ -1,66 +1,40 @@
 #include <stdio.h>
-#include <stdlib.h>
-int main(int argc, char argv[])
+#include <string.h>
+
+void gemismaPedion();
+
+struct ypallhlos
+    {
+        char name[30];
+        int arithmos_Mhtrwou;
+        int eidos_Pthxiou;
+        int wres_Yperwrias;
+        int vasikos_Mhsfos;
+    };
+
+    struct ypallhlos yp1;
+    struct ypallhlos yp2;
+
+
+int main()
 {
+    gemismaPedion();
+
+    printf("%s %3d %3d \n %3d %3d",yp1.name,yp1.arithmos_Mhtrwou,yp1.eidos_Pthxiou,yp1.wres_Yperwrias,yp1.vasikos_Mhsfos);
+
+}
+
+void gemismaPedion()
+{
+     
+
+    strcpy(yp1.name,"Nikos");
+    printf("Enter Arithmos_Mhtrwou: ");
+    scanf("%d",&yp1.arithmos_Mhtrwou);
+
+    printf("Enter Eidos_Pthxiou: ");
+    scanf("%d",&yp1.eidos_Pthxiou);
     
-    //askhsh 6.1
-
-    int i = 0;
-
-    do //tropos a with do while
-    {
-        printf("Give an integer in [1,10]: ");
-        scanf("%d",&i);
-    }while (i<1 || i>10);
-
-    for (int j=1; j<=10; j++)
-    {
-        printf("%d * %d = %d\n",i,j,i*j);
-    }
-
-    //tropos b with for
-    
-
- /*   for (; i<1 || i>10;)
-    {
-         printf("Give an integer in [1,10]: ");  //no clue how to do it send help
-         scanf("%d",&i);   
-    }
-
-    for (int j=1; j<=10; j++)
-    {
-        printf("%d * %d = %d\n",i,j,i*j);
-    } */
-
-    //askhsh 6.2
-
-    for (i=1; i<=10; i++)
-       {
-             for (int j=1; j<=10; j++)
-            {
-                printf("%dx%d = %d, ",i,j,i*j);
-            }
-       }
-
-
-    //askhsh 6.3
-
-    int n;
-
-    do
-    {
-        printf("Give an integer in [5,20]: ");
-        scanf("%d",&n);
-    }while (n<5 || n>20);
-
-    int sum=0;
-
-    for (int i=1; i<=2*n-1; i+=2)
-    {
-
-        printf("%d+",i);
-    }
-
-  system("PAUSE");
-  return 0;
+    yp1.wres_Yperwrias = 100;
+    yp1.vasikos_Mhsfos = 50;
 }
